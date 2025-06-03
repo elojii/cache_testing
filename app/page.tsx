@@ -17,7 +17,7 @@ export default async function Home() {
     <main className="p-4">
       <h1 className="text-2xl font-bold mb-4">Latest Posts</h1>
       <ul className="space-y-2">
-        {posts.map((post: any) => (
+        {posts.map((post: {id: string, title: string, body: string}) => (
           <li key={post.id} className="border p-3 rounded">
             <h2 className="font-semibold">{post.title}</h2>
             <p>{post.body}</p>
