@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 async function getPosts() {
   const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
     cache: "force-cache", // ensures server-side fetch on every request
